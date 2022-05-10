@@ -5,4 +5,13 @@
 * [sp18](https://sp18.datastructur.es/index.html)
 * [Gradescope](https://gradescope.com): MNXYKX
 
+---
+
+# Scores
+
+* hw
+    * hw0: Nothing to do here
+* lab
+    * [lab1](./lab1): Nothing to do here
+* proj
 
