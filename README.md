@@ -7,11 +7,23 @@
 
 ---
 
-# Scores
+# Implementation
 
 * hw
     * hw0: Nothing to do here
 * lab
     * [lab1](./lab1): Nothing to do here
+    * [lab2](./lab2): Unit Testing with JUnit and IntLists
 * proj
+
+# Scores
+
+## hw
+
+## lab
+
+* lab2
+![lab2](./img/lab2.png)
+
+## proj
 
