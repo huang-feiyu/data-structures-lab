@@ -5,9 +5,7 @@
 * [sp18](https://sp18.datastructur.es/index.html)
 * [Gradescope](https://gradescope.com): MNXYKX
 
----
-
-# Implementation
+## Implementation
 
 * hw
     * hw0: Nothing to do here
@@ -16,14 +14,15 @@
     * [lab2](./lab2): Unit Testing with JUnit and IntLists
 * proj
 
-# Scores
+## Scores
 
-## hw
+### hw
 
-## lab
+### lab
 
 * lab2
+
 ![lab2](./img/lab2.png)
 
-## proj
+### proj
 
