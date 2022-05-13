@@ -12,6 +12,7 @@
 * lab
     * [lab1](./lab1): have done Nothing here
     * [lab2](./lab2): Unit Testing with JUnit and IntLists
+    * [lab3](./lab3): Unit Testing with JUnit, Debugging
 * proj
     * [proj0](./proj0): have done Nothing here
 
@@ -24,6 +25,10 @@
 * lab2
 
 ![lab2](./img/lab2.png)
+
+* lab3
+
+![lab3](./img/lab3.png)
 
 ### proj
 
