@@ -8,11 +8,12 @@
 ## Implementation
 
 * hw
-    * hw0: Nothing to do here
+    * hw0: have done Nothing here
 * lab
-    * [lab1](./lab1): Nothing to do here
+    * [lab1](./lab1): have done Nothing here
     * [lab2](./lab2): Unit Testing with JUnit and IntLists
 * proj
+    * [proj0](./proj0): have done Nothing here
 
 ## Scores
 
