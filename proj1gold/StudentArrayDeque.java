@@ -204,7 +204,7 @@ public class StudentArrayDeque<T> {
                     int var6;
                     T[] var7 = (T[]) (new Object[var6 = this.b / 2]);
                     System.arraycopy(this.a, this.e + 1, var7,
-                            var6 / 2 - (this.d - this.e) + 1, this.d - this.e);
+                        var6 / 2 - (this.d - this.e) + 1, this.d - this.e);
                     this.e = var6 / 2 - (this.d - this.e);
                     System.arraycopy(this.a, this.d + 1, var7, var6 / 2 + 1, this.f - this.d - 1);
                     int var8 = 1;
