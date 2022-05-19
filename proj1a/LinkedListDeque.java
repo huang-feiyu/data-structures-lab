@@ -1,9 +1,9 @@
-public class LinkedListDeque<T> implements Deque<T> {
+public class LinkedListDeque<T> {
     // internal class node
     private static class Node<T> {
-        public Node<T> prev;
-        public Node<T> next;
-        public T value;
+        private Node<T> prev;
+        private Node<T> next;
+        final private T value;
 
         Node(T value) {
             this.prev = null;
@@ -26,7 +26,6 @@ public class LinkedListDeque<T> implements Deque<T> {
         tail = null;
     }
 
-    @Override
     public void addFirst(T item) {
         if (item == null) {
             throw new java.lang.IllegalArgumentException();
@@ -44,7 +43,6 @@ public class LinkedListDeque<T> implements Deque<T> {
         size++;
     }
 
-    @Override
     public void addLast(T item) {
         if (item == null) {
             throw new java.lang.IllegalArgumentException();
@@ -62,17 +60,14 @@ public class LinkedListDeque<T> implements Deque<T> {
         size++;
     }
 
-    @Override
     public boolean isEmpty() {
         return head == null;
     }
 
-    @Override
     public int size() {
         return size;
     }
 
-    @Override
     public void printDeque() {
         if (isEmpty()) {
             throw new java.util.NoSuchElementException();
@@ -85,10 +80,9 @@ public class LinkedListDeque<T> implements Deque<T> {
         System.out.println(cur.value);
     }
 
-    @Override
     public T removeFirst() {
         if (isEmpty()) {
-            throw new java.util.NoSuchElementException();
+            return null;
         }
         T item = head.value;
         if (size == 1) {
@@ -102,10 +96,9 @@ public class LinkedListDeque<T> implements Deque<T> {
         return item;
     }
 
-    @Override
     public T removeLast() {
         if (isEmpty()) {
-            throw new java.util.NoSuchElementException();
+            return null;
         }
         T item = tail.value;
         if (size == 1) {
@@ -119,7 +112,6 @@ public class LinkedListDeque<T> implements Deque<T> {
         return item;
     }
 
-    @Override
     public T get(int index) {
         if (index >= size) {
             return null;
