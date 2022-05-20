@@ -80,31 +80,23 @@ public class ArrayDeque<T> {
         if (index >= size() || index < 0 || isEmpty()) {
             return null;
         }
-        if (head < tail) {
-            return array[index + head];
-        } else if (head > tail) {
-            if (index + head < capacity) {
-                return array[index + head];
-            } else {
-                return array[(index + head) % capacity];
-            }
-        }
-        return null;
-
+        return array[(head + index) % capacity];
     }
 
     /**
      * copy from the first, twice the previous array
      */
     private void extendArray() {
+        printDeque();
         T[] newArray = (T[]) new Object[capacity * 2];
         for (int i = 0; i < capacity; i++) {
             newArray[i] = get(i);
         }
         head = 0;
-        tail = capacity;
+        tail = capacity - 1;
         capacity *= 2;
         array = newArray;
+        printDeque();
     }
 
     /**
