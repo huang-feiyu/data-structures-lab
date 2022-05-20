@@ -19,26 +19,22 @@ public class ArrayDeque<T> {
         if (item == null) {
             throw new java.lang.IllegalArgumentException();
         }
-        if (isEmpty()) {
-            array[head] = item;
-            tail++;
-            return;
-        }
         if (size() == capacity - 1) {
             extendArray();
         }
-        array[(head - 1 + capacity) % capacity] = item;
+        head = (head - 1 + capacity) % capacity;
+        array[head] = item;
     }
 
     public void addLast(T item) {
         if (item == null) {
             throw new java.lang.IllegalArgumentException();
         }
-        array[tail] = item;
-        tail = (tail + 1) % capacity;
         if (size() == capacity - 1) {
             extendArray();
         }
+        array[tail] = item;
+        tail = (tail + 1) % capacity;
     }
 
     public boolean isEmpty() {
@@ -51,7 +47,7 @@ public class ArrayDeque<T> {
 
     public void printDeque() {
         for (int i = 0; i < capacity; i++) {
-            System.out.print(array[i] + " ");
+            System.out.print(get(i) + " ");
         }
         System.out.println();
     }
@@ -60,11 +56,11 @@ public class ArrayDeque<T> {
         if (isEmpty()) {
             return null;
         }
+        T item = array[head];
+        head = (head + 1) % capacity;
         if (size() == capacity / 4 && capacity != INIT_CAPACITY) {
             shortenArray();
         }
-        T item = array[head];
-        head = (head + 1) % capacity;
         return item;
     }
 
@@ -72,20 +68,29 @@ public class ArrayDeque<T> {
         if (isEmpty()) {
             return null;
         }
+        tail = (tail - 1 + capacity) % capacity;
+        T item = array[tail];
         if (size() == capacity / 4 && capacity != INIT_CAPACITY) {
             shortenArray();
         }
-        T item = array[tail - 1];
-        tail = (tail - 1 + capacity) % capacity;
         return item;
     }
 
     public T get(int index) {
-        if (index >= size()) {
+        if (index >= size() || index < 0 || isEmpty()) {
             return null;
         }
-        int arrayIndex = (head + index) % capacity;
-        return array[arrayIndex];
+        if (head < tail) {
+            return array[index + head];
+        } else if (head > tail) {
+            if (index + head < capacity) {
+                return array[index + head];
+            } else {
+                return array[(index + head) % capacity];
+            }
+        }
+        return null;
+
     }
 
     /**
@@ -94,7 +99,7 @@ public class ArrayDeque<T> {
     private void extendArray() {
         T[] newArray = (T[]) new Object[capacity * 2];
         for (int i = 0; i < capacity; i++) {
-            newArray[i] = array[(i + head) % capacity];
+            newArray[i] = get(i);
         }
         head = 0;
         tail = capacity;
@@ -108,7 +113,7 @@ public class ArrayDeque<T> {
     private void shortenArray() {
         T[] newArray = (T[]) new Object[capacity / 2];
         for (int i = 0; i < capacity / 4; i++) {
-            newArray[i] = array[(i + head) % capacity];
+            newArray[i] = get(i);
         }
         head = 0;
         tail = capacity / 4;

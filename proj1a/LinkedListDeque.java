@@ -3,7 +3,7 @@ public class LinkedListDeque<T> {
     private static class Node<T> {
         private Node<T> prev;
         private Node<T> next;
-        final private T value;
+        T value;
 
         Node(T value) {
             this.prev = null;
