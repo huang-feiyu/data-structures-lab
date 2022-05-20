@@ -87,7 +87,6 @@ public class ArrayDeque<T> {
      * copy from the first, twice the previous array
      */
     private void extendArray() {
-        printDeque();
         T[] newArray = (T[]) new Object[capacity * 2];
         for (int i = 0; i < capacity; i++) {
             newArray[i] = get(i);
@@ -96,7 +95,6 @@ public class ArrayDeque<T> {
         tail = capacity - 1;
         capacity *= 2;
         array = newArray;
-        printDeque();
     }
 
     /**
