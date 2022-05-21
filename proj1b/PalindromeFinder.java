@@ -4,6 +4,7 @@
 public class PalindromeFinder {
 
     public static void main(String[] args) {
+        /*
         int minLength = 4;
         In in = new In("../library-sp18/data/words.txt");
         Palindrome palindrome = new Palindrome();
@@ -14,5 +15,6 @@ public class PalindromeFinder {
                 System.out.println(word);
             }
         }
+         */
     }
 }
