@@ -32,4 +32,24 @@ public class TestPalindrome {
         // cover 3
         assertFalse(palindrome.isPalindrome("ilikecat"));
     }
+
+    @Test
+    public void testOffByOne() {
+        CharacterComparator cc = new OffByOne();
+        assertTrue(palindrome.isPalindrome("", cc));
+        assertTrue(palindrome.isPalindrome("a", cc));
+        assertTrue(palindrome.isPalindrome("flake", cc));
+        assertFalse(palindrome.isPalindrome("aabaa", cc));
+        assertFalse(palindrome.isPalindrome("noon", cc));
+    }
+
+    @Test
+    public void testOffBy5() {
+        CharacterComparator cc = new OffByN(5);
+        assertTrue(palindrome.isPalindrome("", cc));
+        assertTrue(palindrome.isPalindrome("a", cc));
+        assertTrue(palindrome.isPalindrome("bing", cc));
+        assertFalse(palindrome.isPalindrome("aabaa", cc));
+        assertFalse(palindrome.isPalindrome("noon", cc));
+    }
 }
