@@ -15,7 +15,7 @@
     * [lab3](./lab3): Unit Testing with JUnit, Debugging
 * proj
     * [proj0](./proj0): have done Nothing here
-    * [proj1](./proj1): 
+    * [proj1](./proj1): Deque, Testing, Autograding
 
 ## Scores
 
