@@ -15,6 +15,7 @@
     * [lab3](./lab3): Unit Testing with JUnit, Debugging
 * proj
     * [proj0](./proj0): have done Nothing here
+    * [proj1](./proj1): 
 
 ## Scores
 
@@ -38,7 +39,10 @@
 
 * proj1b
 
-I fixed the issue, it would get a full score in the end.
-
 ![proj1b](./img/proj1b.png)
+
+* proj1c
+
+![proj1c](./img/proj1c.png)
+
 
