@@ -36,3 +36,9 @@
 
 ![proj1a](./img/proj1a.png)
 
+* proj1b
+
+I fixed the issue, it would get a full score in the end.
+
+![proj1b](./img/proj1b.png)
+
