@@ -8,14 +8,15 @@
 ## Implementation
 
 * hw
-    * hw0: have done Nothing here
+    * hw0
 * lab
-    * [lab1](./lab1): have done Nothing here
-    * [lab2](./lab2): Unit Testing with JUnit and IntLists
-    * [lab3](./lab3): Unit Testing with JUnit, Debugging
+    * [lab1](./lab1)
+    * [lab2](./lab2)
+    * [lab3](./lab3)
+    * [lab4](./lab4)
 * proj
-    * [proj0](./proj0): have done Nothing here
-    * [proj1](./proj1): Deque, Testing, Autograding
+    * [proj0](./proj0)
+    * [proj1](./proj1)
 
 ## Scores
 
@@ -30,6 +31,10 @@
 * lab3
 
 ![lab3](./img/lab3.png)
+
+* lab4
+
+![lab4](./img/lab4.png)
 
 ### proj
 
