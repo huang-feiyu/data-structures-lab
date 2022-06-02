@@ -43,8 +43,6 @@ public class RandomWorldDemo {
                 return Tileset.WALL;
             case 1:
                 return Tileset.FLOWER;
-            case 2:
-                return Tileset.NOTHING;
             default:
                 return Tileset.NOTHING;
         }

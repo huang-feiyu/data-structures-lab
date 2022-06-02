@@ -14,9 +14,10 @@
     * [lab2](./lab2)
     * [lab3](./lab3)
     * [lab4](./lab4)
+    * [lab5](./proj2/byog/lab5)
 * proj
     * [proj0](./proj0)
-    * [proj1](./proj1)
+    * proj1: [proj1a](./proj1a), [proj1b](./proj1b), [proj1c](./proj1gold)
 
 ## Scores
 
@@ -36,6 +37,10 @@
 
 ![lab4](./img/lab4.png)
 
+* lab5
+
+<img src="./img/lab5.png" alt="lab5" style="zoom:50%;" />
+
 ### proj
 
 * proj1a
@@ -49,5 +54,4 @@
 * proj1c
 
 ![proj1c](./img/proj1c.png)
-
 
