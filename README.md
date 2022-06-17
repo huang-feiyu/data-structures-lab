@@ -1,5 +1,7 @@
 # CS61B
 
+**暂时搁置**
+
 > [Learning-Space/Data-Structures](https://github.com/huang-feiyu/Learning-Space/tree/master/Data-Structures)<br/>本课程仅做 lab 与 proj，而不作理论部分学习。
 
 * [sp18](https://sp18.datastructur.es/index.html)
@@ -7,7 +9,7 @@
 
 ## Implementation
 
-* hw
+* hw (skip this temporarily cause most of them are included in [Algorithm](https://github.com/huang-feiyu/Learning-Space/tree/master/Algorithms))
     * hw0
 * lab
     * [lab1](./lab1)
